@@ -63,6 +63,23 @@
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+.container {
+  position: relative;
+}
+
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
     </style>
     <title> Jocelyn Velazquez </title>
   </head>
@@ -84,9 +101,10 @@
     <p> My name is Jocelyn Velazquez and I am a current sophomore at UMass Amherst. This site is not only a project to challenge myself, but also a way to showcase my research. </p>
     </div>
 
-    <h1 style = "background-image: url(websiteimage.jpg);color:#967969; text-align:center;">
-      Jocelyn Velazquex
-      </h1>
+      <div class="container">
+        <img src="websiteimage.jpg">
+        <div class="centerText">Jocelyn Velazquez</div>
+      </div>
 
     <script>
     function openNav() {
